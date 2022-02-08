@@ -5689,10 +5689,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec3cd980e4afa014eb7eae5326c90dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  answer: {fileID: 0}
-  InputFieldValue_1: {fileID: 0}
-  InputFieldValue_2: {fileID: 0}
-  InputFieldValue_3: {fileID: 0}
+  answer: {fileID: 952702027}
+  InputFieldValue_1: {fileID: 2144565381}
+  InputFieldValue_2: {fileID: 719181753}
+  InputFieldValue_3: {fileID: 338179116}
 --- !u!1 &995460431
 GameObject:
   m_ObjectHideFlags: 0

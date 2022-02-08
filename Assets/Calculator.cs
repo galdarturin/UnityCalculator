@@ -24,8 +24,11 @@ public class Calculator : MonoBehaviour
     {
 
         int _tempResult = 0;
-        
-        _tempResult = Convert.ToInt32(InputFieldValue_1.text) + Convert.ToInt32(InputFieldValue_2.text);
+
+        int _a = Convert.ToInt32(InputFieldValue_1.text);
+        int _b = Convert.ToInt32(InputFieldValue_2.text);
+
+        _tempResult = _a + _b;
 
         answer.text = _tempResult.ToString();
 
@@ -36,7 +39,10 @@ public class Calculator : MonoBehaviour
 
         int _tempResult = 0;
 
-        _tempResult = Convert.ToInt32(InputFieldValue_1.text) - Convert.ToInt32(InputFieldValue_2.text);
+        int _a = Convert.ToInt32(InputFieldValue_1.text);
+        int _b = Convert.ToInt32(InputFieldValue_2.text);
+
+        _tempResult = _a - _b;
 
         answer.text = _tempResult.ToString();
 
@@ -47,7 +53,10 @@ public class Calculator : MonoBehaviour
 
         int _tempResult = 0;
 
-        _tempResult = Convert.ToInt32(InputFieldValue_1.text) * Convert.ToInt32(InputFieldValue_2.text);
+        int _a = Convert.ToInt32(InputFieldValue_1.text);
+        int _b = Convert.ToInt32(InputFieldValue_2.text);
+
+        _tempResult = _a * _b;
 
         answer.text = _tempResult.ToString();
 
@@ -58,7 +67,10 @@ public class Calculator : MonoBehaviour
 
         int _tempResult = 0;
 
-        _tempResult = Convert.ToInt32(InputFieldValue_1.text) / Convert.ToInt32(InputFieldValue_2.text);
+        int _a = Convert.ToInt32(InputFieldValue_1.text);
+        int _b = Convert.ToInt32(InputFieldValue_2.text);
+
+        _tempResult = _a / _b;
 
         answer.text = _tempResult.ToString();
 

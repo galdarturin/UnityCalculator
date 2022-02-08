@@ -27,7 +27,11 @@ public class ThreeNumbersComparer : MonoBehaviour
 
         string _tempResult = "";
 
-        if (InputFieldValue_1.text.Equals(InputFieldValue_2.text) && InputFieldValue_1.text.Equals(InputFieldValue_3.text))
+        int _a = Convert.ToInt32(InputFieldValue_1.text);
+        int _b = Convert.ToInt32(InputFieldValue_2.text);
+        int _c = Convert.ToInt32(InputFieldValue_3.text);
+
+        if (_a.Equals(_b) && _a.Equals(_c))
         {
 
             answer.text = "Равны";
@@ -37,36 +41,24 @@ public class ThreeNumbersComparer : MonoBehaviour
         else
         {
 
-            if (
-                Convert.ToInt32(InputFieldValue_1.text) - Convert.ToInt32(InputFieldValue_2.text) > 0
-                ||
-                Convert.ToInt32(InputFieldValue_1.text) - Convert.ToInt32(InputFieldValue_3.text) > 0
-            )
+            if ( _a - _b > 0 || _a - _c > 0 )
             {
 
-                _tempResult += (_tempResult == "") ? InputFieldValue_1.text : ", " + InputFieldValue_1.text;
+                _tempResult += (_tempResult == "") ? _a.ToString() : ", " + _a.ToString();
+
+            }
+            
+            if ( _b - _a > 0 || _b - _c > 0 )
+            {
+
+                _tempResult += (_tempResult == "") ? _b.ToString() : ", " + _b.ToString();
 
             }
 
-            if (
-                Convert.ToInt32(InputFieldValue_2.text) - Convert.ToInt32(InputFieldValue_1.text) > 0
-                ||
-                Convert.ToInt32(InputFieldValue_2.text) - Convert.ToInt32(InputFieldValue_3.text) > 0
-            )
+            if ( _c - _a > 0 || _c - _b > 0 )
             {
 
-                _tempResult += (_tempResult == "") ? InputFieldValue_2.text : ", " + InputFieldValue_2.text;
-
-            }
-
-            if (
-                Convert.ToInt32(InputFieldValue_3.text) - Convert.ToInt32(InputFieldValue_1.text) > 0
-                ||
-                Convert.ToInt32(InputFieldValue_3.text) - Convert.ToInt32(InputFieldValue_2.text) > 0
-            )
-            {
-
-                _tempResult += (_tempResult == "") ? InputFieldValue_3.text : ", " + InputFieldValue_3.text;
+                _tempResult += (_tempResult == "") ? _c.ToString() : ", " + _c.ToString();
 
             }
 

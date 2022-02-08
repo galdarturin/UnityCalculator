@@ -23,22 +23,25 @@ public class TwoNumbersComparer : MonoBehaviour
     public void onComparisonClicked()
     {
 
-        if( InputFieldValue_1.text.Equals(InputFieldValue_2.text) )
+        int _a = Convert.ToInt32(InputFieldValue_1.text);
+        int _b = Convert.ToInt32(InputFieldValue_2.text);
+
+        if( _a.Equals(_b) )
         {
 
             answer.text = "Равны";
 
         }
-        else if(Convert.ToInt32(InputFieldValue_1.text) > Convert.ToInt32(InputFieldValue_2.text) )
+        else if( _a > _b )
         {
 
-            answer.text = InputFieldValue_1.text;
+            answer.text = _a.ToString();
 
         }
         else
         {
 
-            answer.text = InputFieldValue_2.text;
+            answer.text = _b.ToString();
 
         }
 
